@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>all_http_Codes</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+
+    <%- include('nav.ejs') %>
+
+<main class="container">
+
+    <% for(let i =0; i < Object.keys(readyObj).length; i++){
+        const ourKey = Object.keys(readyObj)[i];
+        const ourVal = readyObj[ourKey]; %>
+        <%- include('section.ejs',{title:ourKey, ourVal:ourVal}) %>
+    <%} %>
+
+</main>
+
+<footer class="container">
+
+    <%- include('footer.ejs') %>
+
+</footer>
+
+</body>
+</html>

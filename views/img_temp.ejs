@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= codeErr.title%></title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+
+<%- include('nav.ejs') %>
+
+<main class="container">
+
+    <div>
+
+        <h2><%= codeErr.code%></h2>
+        <h3><%= codeErr.title%></h3>
+        <img src="<%= codeErr.image%>">
+        <p><%= codeErr.description%></p>
+        <p><%= codeErr.example%></p>
+
+    </div>
+
+</main>
+
+<footer class="container">
+
+    <%- include('footer.ejs') %>
+
+</footer>
+
+</body>
+</html>

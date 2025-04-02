@@ -1,0 +1,17 @@
+<section class="error_type">
+
+    <h2><%= title %></h2>
+
+    <div class="grid_img">
+
+        <% ourVal.forEach((elem)=>{%>
+            <div>
+                <a href="http://localhost:3000/code/<%= elem.code%>"><img src="<%= elem.image%>"></a>
+                <h3><%= elem.code %></h3>
+                <p><%= elem.title%></p>
+            </div>
+        <%}) %>
+
+    </div>
+
+</section>

@@ -1,0 +1,82 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+:root {
+    --font-primary: Vollkorn, serif;
+    --font-secondary: Oswald, sans-serif;
+}
+html {
+    font-size: 1.125rem;
+    line-height: 1.5;
+
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+body{
+    margin: 0 20px 0;
+    color: black;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+p{
+    text-wrap:wrap ;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img, svg {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    gap: 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+}
+
+.container{
+    max-width: 1100px;
+    margin-left:auto ;
+    margin-right:auto ;
+}
+
+.grid_img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 20px;
+}
+.error_type{
+    margin-bottom: 20px;
+}
